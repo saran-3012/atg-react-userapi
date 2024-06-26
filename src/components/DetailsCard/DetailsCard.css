@@ -1,0 +1,143 @@
+.detailscard{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0.5rem 1.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--clr-teal-950);
+}
+
+.detailscard__container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.detailscard__imgbox{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.detailscard__namebox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.detailscard__name{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--clr-teal-950);
+}
+
+.detailscard__username{
+    cursor: pointer;
+    font-weight: 200;
+    font-size: 0.875rem;
+    color: var(--clr-teal-800);
+}
+
+.detailscard__username:hover{
+    text-decoration: underline;
+}
+
+.detailscard__bio{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.detailscard__jobtitle, .detailscard__email{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.detailscard__jobtitle > svg, .detailscard__email > svg{
+    width: 1rem;
+    height: 1rem;
+}
+
+
+@media only screen and (min-width: 475px) {
+    .detailscard__bio{
+        text-align: initial;
+    }
+    .detailscard__imgbox{
+        width: 5rem;
+        height: 5rem;
+    }
+    .detailscard__jobtitle, .detailscard__email{
+        gap: 0.75rem;
+    }
+    .detailscard__jobtitle > svg, .detailscard__email > svg{
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
+  
+@media only screen and (min-width: 640px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .detailscard{
+        gap: 0.75rem;
+        font-size: 1rem;
+    }
+    .detailscard__container{
+        gap: 1.25rem;
+    }
+    .detailscard__imgbox{
+        width: 6rem;
+        height: 6rem;
+    }
+    .detailscard__name{
+        font-size: 1.125rem;
+    }
+    .detailscard__username{
+        font-size: 1rem;
+    }
+    .detailscard__jobtitle > svg, .detailscard__email > svg{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .detailscard{
+        gap: 0.75rem;
+        font-size: 1.125rem;
+    }
+    .detailscard__container{
+        gap: 1.5rem;
+    }
+    .detailscard__imgbox{
+        width: 7rem;
+        height: 7rem;
+    }
+    .detailscard__name{
+        font-size: 1.25rem;
+    }
+    .detailscard__username{
+        font-size: 1.125rem;
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+
+}

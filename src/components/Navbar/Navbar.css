@@ -1,0 +1,59 @@
+.navbar{
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 3.5rem;
+    background-color: var(--clr-teal-600);
+    color: var(--clr-teal-50);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 200ms;
+}
+
+.navbar__logo{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+
+@media only screen and (min-width: 475px) {
+
+}
+  
+@media only screen and (min-width: 640px) {
+    .navbar__logo{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .navbar{
+        height: 4rem;
+    }
+    .navbar__logo{
+        font-size: 1.75rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .navbar{
+        height: 4.5rem;
+    }
+    .navbar__logo{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+
+}

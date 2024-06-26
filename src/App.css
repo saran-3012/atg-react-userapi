@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --clr-light: #F0F8FF;
+  --clr-dark: #000000;
+
+  --clr-teal-50: #eefffc;
+  --clr-teal-100: #c5fffa;
+  --clr-teal-200: #8bfff5;
+  --clr-teal-300: #4afef0;
+  --clr-teal-400: #15ece2;
+  --clr-teal-500: #00d0c9;
+  --clr-teal-600: #00a8a5;
+  --clr-teal-700: #008080;
+  --clr-teal-800: #066769;
+  --clr-teal-900: #0a5757;
+  --clr-teal-950: #003235;
+  
+  --clr-loader: rgba(238, 255, 252, 0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.dark-theme{
+  --clr-light: #121212;
+  --clr-dark: #FFFFFF;
+
+  --clr-teal-50: #003235;
+  --clr-teal-100: #0a5757;
+  --clr-teal-200: #066769;
+  --clr-teal-300: #008080;
+  --clr-teal-400: #00a8a5;
+  --clr-teal-500: #00d0c9;
+  --clr-teal-600: #15ece2;
+  --clr-teal-700: #4afef0;
+  --clr-teal-800: #8bfff5;
+  --clr-teal-900: #c5fffa;
+  --clr-teal-950: #eefffc;
+  
+  --clr-loader: rgba(0, 50, 53, 0.5);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+img, svg{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.container{
+  width: 100%;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+
+@media only screen and (min-width: 475px) {
+  .container{
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 640px) {
+  .container{
+      padding-left: 2rem;
+      padding-right: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (min-width: 768px) {
+  .container{
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container{
+      padding-left: 3rem;
+      padding-right: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container{
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container{
+      padding-left: 4rem;
+      padding-right: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .container{
+      padding-left: 5rem;
+      padding-right: 5rem;
   }
 }
