@@ -18,6 +18,7 @@ const Home = () => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
+        console.log(process.env.REACT_APP_USERAPI_URL)
         const response = await fetch(process.env.REACT_APP_USERAPI_URL );
         const data = await response.json();
         if(Array.isArray(data)){
